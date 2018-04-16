@@ -1,0 +1,13 @@
+.index-layout-transparent {
+  background: url('../img/header.jpg') center / cover;
+}
+.index-layout-transparent .mdl-layout__header,
+.index-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
