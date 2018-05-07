@@ -8,9 +8,13 @@
   background: url('../img/header.jpg') center / cover;
 }
 
-.index-layout-transparent .mdl-layout__header, .index-layout-transparent .mdl-layout__drawer-button{
+.index-layout-transparent .mdl-layout__header, .index-layout-transparent .mdl-layout__drawer-button {
   color: white;
   text-shadow: 2px 2px 2px #000000;
+}
+
+.index-layout-content {
+  padding: 2% 10% 0px 10%;
 }
 
 html, body {

@@ -16,7 +16,49 @@
 	</head>
 
 	<body class="mdl-base">
-		<?php include("header.php"); ?>
+		<div class="mdl-layout mdl-js-layout">
+			<?php include("header.php"); ?>
+			<main class="index-layout-content mdl-layout__content">
+
+
+				<!-- Wide card with share menu button -->
+				<style>
+					.demo-card-wide.mdl-card {
+						width: 30%;
+					}
+
+					.demo-card-wide > .mdl-card__title {
+						height: 12vw;
+						background: url('asset/img/welcome_card.jpg') center / cover;
+					}
+
+					.demo-card-wide > .mdl-card__menu {
+						color: #fff;
+					}
+				</style>
+
+				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title">
+					</div>
+					<div class="mdl-card__supporting-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Mauris sagittis pellentesque lacus eleifend lacinia...
+					</div>
+					<div class="mdl-card__actions mdl-card--border">
+						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							Mon affiche
+						</a>
+					</div>
+					<div class="mdl-card__menu">
+						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FGraphCommunity.ESIEA%2F&amp;src=sdkprepars', '_blank')">
+							<i class="material-icons">share</i>
+						</button>
+					</div>
+				</div>
+
+
+			</main>
+		</div>
   </body>
 
 </html>
