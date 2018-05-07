@@ -18,7 +18,8 @@
 	<body class="mdl-base">
 		<div class="mdl-layout mdl-js-layout">
 			<?php include("header.php"); ?>
-			<main class="index-layout-content mdl-layout__content">
+
+      <main class="index-layout-content mdl-layout__content">
 
 
 				<!-- Wide card with share menu button -->
@@ -45,19 +46,20 @@
 						Mauris sagittis pellentesque lacus eleifend lacinia...
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
 							Mon affiche
-						</a>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
 					</div>
 					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FGraphCommunity.ESIEA%2F&amp;src=sdkprepars', '_blank')">
+						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FGraphCommunity.ESIEA%2F&amp;src=sdkprepars', '_blank')" data-upgraded=",MaterialButton,MaterialRipple">
 							<i class="material-icons">share</i>
-						</button>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(12px, 18px);"></span></span></button>
 					</div>
 				</div>
 
 
 			</main>
+
 		</div>
   </body>
 
