@@ -6,18 +6,18 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Accueil</a>
+                <a class="mdl-navigation__link" href="index.php">Accueil</a>
                 <a class="mdl-navigation__link" href="">Portfolio</a>
-                <a class="mdl-navigation__link" href="">Contact</a>
+                <a class="mdl-navigation__link" href="formulaire.php">Contact</a>
             </nav>
         </div>
     </header>
     <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">GraphCommunity</span>
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Accueil</a>
+            <a class="mdl-navigation__link" href="index.php">Accueil</a>
             <a class="mdl-navigation__link" href="">Portfolio</a>
-            <a class="mdl-navigation__link" href="">Contact</a>
+            <a class="mdl-navigation__link" href="formulaire.php">Contact</a>
             <a class="mdl-navigation__link" href="">Link</a>
         </nav>
     </div>

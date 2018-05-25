@@ -29,7 +29,7 @@
 					}
 
 					.demo-card-wide > .mdl-card__title {
-						height: 12vw;
+						padding-top: 50%;
 						background: url('asset/img/welcome_card.jpg') center / cover;
 					}
 
@@ -42,8 +42,11 @@
 					<div class="mdl-card__title">
 					</div>
 					<div class="mdl-card__supporting-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Mauris sagittis pellentesque lacus eleifend lacinia...
+						<p>
+						<b>« Rapide, efficace, originale »</b><br />
+						GraphCommunity est un groupe de 11 Esiearques dont l’esprit déborde de créativité pour des conceptions graphiques.<br />
+						Nous vous proposons nos services pour créer des outils de communication (affiches, flyers, livrets, logos)
+					</p>
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
