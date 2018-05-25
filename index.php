@@ -15,51 +15,39 @@
 		<link rel="stylesheet" href="asset/css/layout.css" type="text/css">
 	</head>
 
-	<body class="mdl-base">
+	<body>
 		<div class="mdl-layout mdl-js-layout">
-			<?php include("header.php"); ?>
+			<header class="mdl-layout__header">
+			  <div class="mdl-layout-icon"></div>
+			  <div class="mdl-layout__header-row">
+			    <span class="mdl-layout__title">GraphCommunity</span>
+			    <div class="mdl-layout-spacer"></div>
+			    <nav class="mdl-navigation">
+			      <a class="mdl-navigation__link" href="index.php">Accueil</a>
+			      <a class="mdl-navigation__link" href="">Portfolio</a>
+			      <a class="mdl-navigation__link" href="index.php?page=formulaire">Contact</a>
+			    </nav>
+			  </div>
+			</header>
+			<div class="mdl-layout__drawer">
+			  <span class="mdl-layout__title">GraphCommunity</span>
+			  <nav class="mdl-navigation">
+			    <a class="mdl-navigation__link" href="index.php">Accueil</a>
+			    <a class="mdl-navigation__link" href="">Portfolio</a>
+			    <a class="mdl-navigation__link" href="index.php?page=formulaire">Contact</a>
+			    <a class="mdl-navigation__link" href="">Admin</a>
+			  </nav>
+			</div>
 
       <main class="index-layout-content mdl-layout__content">
 
-
-				<!-- Wide card with share menu button -->
-				<style>
-					.demo-card-wide.mdl-card {
-						width: 30%;
-					}
-
-					.demo-card-wide > .mdl-card__title {
-						padding-top: 50%;
-						background: url('asset/img/welcome_card.jpg') center / cover;
-					}
-
-					.demo-card-wide > .mdl-card__menu {
-						color: #fff;
-					}
-				</style>
-
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-					</div>
-					<div class="mdl-card__supporting-text">
-						<p>
-						<b>« Rapide, efficace, originale »</b><br />
-						GraphCommunity est un groupe de 11 Esiearques dont l’esprit déborde de créativité pour des conceptions graphiques.<br />
-						Nous vous proposons nos services pour créer des outils de communication (affiches, flyers, livrets, logos)
-					</p>
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
-							Mon affiche
-						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FGraphCommunity.ESIEA%2F&amp;src=sdkprepars', '_blank')" data-upgraded=",MaterialButton,MaterialRipple">
-							<i class="material-icons">share</i>
-						<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5097px; height: 92.5097px; transform: translate(-50%, -50%) translate(12px, 18px);"></span></span></button>
-					</div>
-				</div>
-
+				<?php
+				if(isset($_GET['page']) && file_exists("page/". $_GET['page'] .".php")) {
+					include("page/". $_GET['page'] .".php");
+				} else {
+					include("page/index.php");
+				}
+				?>
 
 			</main>
 
